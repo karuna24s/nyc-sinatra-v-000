@@ -1,0 +1,9 @@
+<h1>Historical Landmarks</h1>
+
+<h2>Which landmark would you like to learn more about?</h2>
+
+<ul>
+  <% @landmarks.each do |landmark| %>
+    <li>  Name: <%= landmark.name %>, Year Completed: <%=landmark.year_completed%> </li>
+  <% end %>
+</ul>
